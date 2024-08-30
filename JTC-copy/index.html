@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JTC-Home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <section id="header">
+    <!-- Brand and Phone Bar -->
+    <div class="brand-phone-bar d-flex justify-content-between align-items-center px-3 py-2 bg-light">
+        <div class="brand d-flex align-items-center">
+            <img src="logo/logo.svg" alt="Brand Logo" class="logo">
+            <span class="brand-name">JIGYASA THE CURIOSITY</span>
+        </div>
+        <a href="tel:+1234567890" class="phone-link d-flex align-items-center text-dark text-decoration-none">
+            <i class="bi bi-telephone-fill text-primary"></i>
+            <span class="ms-2 text-primary">+91 9560448492</span>
+        </a>
+    </div>
+
+<!-- Navigation Bar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark bg-gradient">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#header">JTC</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        About
+                    </a>
+                    <ul class="dropdown-menu dropdown-success" aria-labelledby="aboutDropdown">
+                        <li><a class="dropdown-item dropdown-item-warning" href="#">About JTC</a></li>
+                        <li><a class="dropdown-item dropdown-item-warning" href="#">Our Team</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Career</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Gallery</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="socialActivitiesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Social Activities
+                    </a>
+                    <ul class="dropdown-menu dropdown-success" aria-labelledby="socialActivitiesDropdown">
+                        <li><a class="dropdown-item dropdown-item-warning" href="#">Upcoming Activities</a></li>
+                        <li><a class="dropdown-item dropdown-item-warning" href="#">Past Activities</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Inquiry</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+
+    </section>
+
+      <!-- Hero Section -->      
+    
+    
+ <!-- slider section -->
+ <section id="slider" class="position-relative">
+    <div id="imageSlider" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="students/3.jpg" class="d-block w-100 img-fluid" alt="Image 1">
+            </div>
+            <div class="carousel-item">
+                <img src="slider_laal batti/5.jpg" class="d-block w-100 img-fluid" alt="Image 2">
+            </div>
+            <div class="carousel-item">
+                <img src="slider_laal batti/6.jpg" class="d-block w-100 img-fluid" alt="Image 3">
+            </div>
+            <div class="carousel-item">
+                <img src="slider_laal batti/7.jpg" class="d-block w-100 img-fluid" alt="Image 4">
+            </div>
+            <div class="carousel-item">
+                <img src="Slider/1.jpg" class="d-block w-100 img-fluid" alt="Image 5">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#imageSlider" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#imageSlider" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+        
+        <!-- Single overlay content for all slides -->
+        <div class="carousel-overlay">
+            <h1 class="display-4 fw-bold">Welcome to JTC-IAS KOTA</h1>
+            <p class="lead">Begin your journey with us and let us guide you to reach your aspirations.</p>
+            <div>
+                <a href="#courses" class="btn btn-primary me-2">Explore Courses</a>
+                <a href="#" class="btn btn-success">Inquiry Form</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Courses Section -->
+<section id="courses" class="my-5">
+    <div class="full-width-container">
+        <div class="title-container d-flex align-items-center flex-column flex-md-row text-center text-md-start">
+            <img src="hero.png" alt="Our Courses Image" class="courses-image mb-3 mb-md-0 me-md-4">
+            <div class="text-container">
+                <h2 class="courses-title mb-3">Our Courses</h2>
+                <p class="courses-description">Explore our wide range of courses designed to help you achieve your career goals.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+    <div class="row g-4 m-3">
+        <!-- Course Card 1 -->
+        <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+            <div class="course-card card h-100">
+                <div class="card-img-container">
+                    <img src="courses/ias 2.jpg" alt="Course Image" class="card-img-top img-fluid">
+                </div>
+                <div class="card-body d-flex flex-column bg-secondary text-white">
+                    <h5 class="card-title">UPSC IAS Foundation</h5>
+                    <p class="card-text mt-auto">Rs 70,000</p>
+                    <a href="ias.html" class="btn btn-primary mt-2">Learn More</a>
+                </div>
+            </div>
+        </div>
+        <!-- Course Card 2 -->
+        <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+            <div class="course-card card h-100">
+                <div class="card-img-container">
+                    <img src="courses/pikaso_texttoimage_35mm-film-photography-a-public-administration-offi (2).jpeg" alt="Course Image" class="card-img-top img-fluid">
+                </div>
+                <div class="card-body d-flex flex-column bg-secondary text-white">
+                    <h5 class="card-title">UPSC IAS Target</h5>
+                    <p class="card-text mt-auto">Rs 90,000</p>
+                    <a href="ias.html" class="btn btn-primary mt-2">Learn More</a>
+                </div>
+            </div>
+        </div>
+        <!-- Course Card 3 -->
+        <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+            <div class="course-card card h-100">
+                <div class="card-img-container">
+                    <img src="courses/rpsc 3.jpg" alt="Course Image" class="card-img-top img-fluid">
+                </div>
+                <div class="card-body d-flex flex-column bg-secondary text-white">
+                    <h5 class="card-title">RPSC RAS Foundation</h5>
+                    <p class="card-text mt-auto">Rs 50,000</p>
+                    <a href="#" class="btn btn-primary mt-2">Learn More</a>
+                </div>
+            </div>
+        </div>
+        <!-- Course Card 4 -->
+        <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+            <div class="course-card card h-100">
+                <div class="card-img-container">
+                    <img src="courses/pikaso_texttoimage_35mm-film-photography-a-public-administration-offi (3).jpeg" alt="Course Image" class="card-img-top img-fluid">
+                </div>
+                <div class="card-body d-flex flex-column bg-secondary text-white">
+                    <h5 class="card-title">RPSC RAS Target</h5>
+                    <p class="card-text mt-auto">Rs 75,000</p>
+                    <a href="#" class="btn btn-primary mt-2">Learn More</a>
+                </div>
+            </div>
+        </div>
+        <!-- Course Card 5 -->
+        <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+            <div class="course-card card h-100">
+                <div class="card-img-container">
+                    <img src="courses/ias 1.jpg" alt="Course Image" class="card-img-top img-fluid">
+                </div>
+                <div class="card-body d-flex flex-column bg-secondary text-white">
+                    <h5 class="card-title">UPSC PRE IAS</h5>
+                    <p class="card-text mt-auto">Rs 30,000</p>
+                    <a href="#" class="btn btn-primary mt-2">Learn More</a>
+                </div>
+            </div>
+        </div>
+        <!-- Course Card 6 -->
+        <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+            <div class="course-card card h-100">
+                <div class="card-img-container">
+                    <img src="courses/RPSC.webp" alt="Course Image" class="card-img-top img-fluid">
+                </div>
+                <div class="card-body d-flex flex-column bg-secondary text-white">
+                    <h5 class="card-title">RPSC PRE RAS</h5>
+                    <p class="card-text mt-auto">Rs 20,000</p>
+                    <a href="#" class="btn btn-primary mt-2">Learn More</a>
+                </div>
+            </div>
+        </div>
+        <!-- Course Card 7 -->
+        <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+            <div class="course-card card h-100">
+                <div class="card-img-container">
+                    <img src="courses/ugc-net.avif" alt="Course Image" class="card-img-top img-fluid">
+                </div>
+                <div class="card-body d-flex flex-column bg-secondary text-white">
+                    <h5 class="card-title">UGC-NET</h5>
+                    <p class="card-text mt-auto">Rs 15,000</p>
+                    <a href="#" class="btn btn-primary mt-2">Learn More</a>
+                </div>
+            </div>
+        </div>
+        <!-- Course Card 8 -->
+        <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+            <div class="course-card card h-100">
+                <div class="card-img-container">
+                    <img src="courses/ashok.jpg" alt="Course Image" class="card-img-top img-fluid">
+                </div>
+                <div class="card-body d-flex flex-column bg-secondary text-white">
+                    <h5 class="card-title">Optional</h5>
+                    <p class="card-text mt-auto">Rs 25,000</p>
+                    <a href="#" class="btn btn-primary mt-2">Learn More</a>
+                </div>
+            </div>
+        </div>
+        <!-- Course Card 9 -->
+        <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+            <div class="course-card card h-100">
+                <div class="card-img-container">
+                    <img src="courses/front-view-young-female-student-red-shirt-black-bag-holding-copybooks-smiling-white_140725-16620.jpg" alt="Course Image" class="card-img-top img-fluid">
+                </div>
+                <div class="card-body d-flex flex-column bg-secondary text-white">
+                    <h5 class="card-title">CUET</h5>
+                    <p class="card-text mt-auto">Rs 25,000</p>
+                    <a href="#" class="btn btn-primary mt-2">Learn More</a>
+                </div>
+            </div>
+        </div>
+        <!-- Course Card 10 -->
+        <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+            <div class="course-card card h-100">
+                <div class="card-img-container">
+                    <img src="courses/CLAT.avif" alt="Course Image" class="card-img-top img-fluid">
+                </div>
+                <div class="card-body d-flex flex-column bg-secondary text-white">
+                    <h5 class="card-title">CLAT</h5>
+                    <p class="card-text mt-auto">Rs 55,000</p>
+                    <a href="#" class="btn btn-primary mt-2">Learn More</a>
+                </div>
+            </div>
+        </div>
+        <!-- Course Card 11 -->
+        <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+            <div class="course-card card h-100">
+                <div class="card-img-container">
+                    <img src="courses/soldiers.avif" alt="Course Image" class="card-img-top img-fluid">
+                </div>
+                <div class="card-body d-flex flex-column bg-secondary text-white">
+                    <h5 class="card-title">NDA/CDS</h5>
+                    <p class="card-text mt-auto">Rs 55,000</p>
+                    <a href="#" class="btn btn-primary mt-2">Learn More</a>
+                </div>
+            </div>
+        </div>
+        <!-- Course Card 12 -->
+        <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+            <div class="course-card card h-100">
+                <div class="card-img-container">
+                    <img src="courses/PTET.jpg" alt="Course Image" class="card-img-top img-fluid">
+                </div>
+                <div class="card-body d-flex flex-column bg-secondary text-white">
+                    <h5 class="card-title">PTET/BSTC</h5>
+                    <p class="card-text mt-auto">Rs 25,000</p>
+                    <a href="#" class="btn btn-primary mt-2">Learn More</a>
+                </div>
+            </div>
+        </div>
+    
+    </div>    
+    </div>
+
+
+
+
+<!-- Facilities Section -->
+<div class="facilities mt-5">
+    <h3 class="text-center mb-3 text-warning fw-bold">Facilities</h3>
+    <ul class="list-unstyled text-center">
+        <li><i class="fas fa-hand-point-right"></i> Modern classrooms with smart boards</li>
+        <li><i class="fas fa-hand-point-right"></i> Well-equipped library with a vast collection of books</li>
+        <li><i class="fas fa-hand-point-right"></i> Experienced faculty with subject expertise</li>
+        <li><i class="fas fa-hand-point-right"></i> Regular mock tests and doubt-clearing sessions</li>
+    </ul>
+</div>
+
+<!-- Special Privileges Section -->
+<div class="special-privileges mt-5">
+    <h3 class="text-center mb-3 text-warning fw-bold">Special Privileges</h3>
+    <ul class="list-unstyled text-center">
+        <li><i class="fas fa-hand-point-right"></i> Personalized mentorship programs</li>
+        <li><i class="fas fa-hand-point-right"></i> Flexible batch timings for working professionals</li>
+    </ul>
+</div>
+
+
+</div>
+    </div>
+</section>
+
+<section class="director-message py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center mb-4">
+                <h2 class="section-title fw-bold">Director's Message</h2>
+            </div>
+        </div>
+        <div class="row align-items-center">
+            <!-- Director's Image -->
+            <div class="col-md-4 text-center">
+                <img src="Rohit Dadhich.png" alt="Director" class="img-fluid director-image">
+            </div>
+            <!-- Director's Message -->
+            <div class="col-md-8">
+                <p class="message-text m-3">
+                    Welcome to our institution. We are committed to providing high-quality education that prepares our students for successful careers. Our experienced faculty, state-of-the-art facilities, and comprehensive curriculum ensure that every student receives the best possible education. Join us and embark on a journey of learning and growth.
+                </p>
+                <p class="message-author text-warning">- Rohit Dadhich</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Footer -->
+<!-- Footer -->
+<footer class="footer bg-dark bg-gradient text-white pt-5 pb-3">
+    <div class="container">
+        <div class="row">
+            <!-- Navigation Menu -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <h5 class="mb-4">Quick Links</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#header" class="text-white">Home</a></li>
+                    <li><a href="#aboutJTC" class="text-white">About JTC</a></li>
+                    <li><a href="#ourTeam" class="text-white">Our Team</a></li>
+                    <li><a href="#career" class="text-white">Career</a></li>
+                    <li><a href="#gallery" class="text-white">Gallery</a></li>
+                    <li><a href="#socialActivities" class="text-white">Social Activities</a></li>
+                    <li><a href="#inquiry" class="text-white">Inquiry</a></li>
+                    <li><a href="#contact" class="text-white">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact Info -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <h5 class="mb-4">Contact Us</h5>
+                <p><i class="fas fa-map-marker-alt"></i>   <a href="https://maps.app.goo.gl/mvRPrzPnZJ36Y97A9" target="_blank" class="contact-link">462, 1st floor, Above ICICI Bank,
+                Modi College Road, Dadabari Ext. Kota (Raj.)</a>
+            </p>
+                <p><i class="fas fa-phone"></i> <a href="tel:+1234567890" class="text-white">+91 9560448492</a></p>
+                <p><i class="fas fa-envelope"></i> <a href="mailto:info@example.com" class="text-white">info@example.com</a></p>
+            </div>
+
+<!-- Social Media Links -->
+<div class="col-lg-4 col-md-12">
+    <div class="social-media-container">
+        <h5 class="mb-4">Connect with Us</h5>
+        <div class="social-media">
+            <a href="https://www.facebook.com/JTCIAS/" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://x.com/jigyasaedu" target="_blank"><i class="fab fa-x"></i></a>
+            <a href="https://www.youtube.com/@jtcias" target="_blank"><i class="fab fa-youtube"></i></a>
+            <a href="https://www.instagram.com/jtc_ias_kota/" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+    </div>
+</div>
+        </div>
+    </div>
+    <div class="text-center py-3 mt-4 bg-dark" >
+        <!-- style="background-color: #222;"> -->
+        <small>&copy; 2024 JTC. All rights reserved.</small>
+    </div>
+</footer>
+
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

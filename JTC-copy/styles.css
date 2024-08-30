@@ -1,0 +1,490 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('bg/hand-drawn-school-supplies-pattern-background_23-2150855728.jpg'); /* Replace with the path to your image */
+    background-size: cover; /* Ensures the image covers the entire body */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-attachment: fixed; /* Keeps the background fixed when scrolling */
+}
+
+/* Brand and Phone Bar */
+.brand-phone-bar {
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #dee2e6;
+    padding: 0.5rem 1rem; /* Add padding for better spacing */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    flex: 1; /* Allow brand to take available space */
+}
+
+.logo {
+    height: 40px;
+    margin-right: 10px;
+}
+
+.brand-name {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: navy;
+}
+
+.phone-link {
+    font-size: 1rem;
+    color: #007bff;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.phone-link i {
+    font-size: 1.25rem;
+    margin-right: 0.5rem; /* Space between icon and text */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .brand-name {
+        font-size: 1rem; /* Adjust font size for smaller screens */
+    }
+
+    .logo {
+        height: 30px; /* Adjust logo size for smaller screens */
+    }
+
+    .phone-link {
+        font-size: 0.875rem; /* Smaller font size for phone number */
+    }
+
+    .phone-link i {
+        font-size: 1rem; /* Adjust icon size for smaller screens */
+    }
+}
+
+@media (max-width: 576px) {
+    .brand-phone-bar {
+        flex-direction: column; /* Stack elements vertically */
+        align-items: flex-start; /* Align items to the start */
+    }
+
+    .phone-link {
+        margin-top: 0.5rem; /* Add margin for spacing */
+    }
+}
+
+/* Navigation Bar */
+.navbar {
+    margin-top: 1px;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-nav .nav-link {
+    margin-left: 15px;
+    font-size: 1rem;
+}
+
+/* Dropdown Background Color Success */
+.dropdown-menu.dropdown-success {
+    background-color: #198754; /* Bootstrap success color */
+}
+
+/* Dropdown item text color when the background is green */
+.dropdown-item {
+    color: #ffffff; /* White color for better contrast */
+}
+
+/* Change dropdown item color to warning on hover */
+.dropdown-item:hover {
+    background-color: #ffc107; /* Bootstrap warning color */
+}
+
+/* Change dropdown item text color on hover */
+.dropdown-item-warning:hover {
+    color: #000000; /* Set a contrasting text color */
+}
+/* Hero Section */
+/* slider */
+.carousel-item img {
+    width: 100%;
+    height: auto;
+    max-height: 500px; /* Adjust the max-height as needed */
+    object-fit: cover;
+}
+
+.carousel-overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5); /* Adjust the opacity of the mask */
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.carousel-overlay h1,
+.carousel-overlay p {
+    opacity: 0.9; /* Adjust the opacity of the text */
+}
+
+.carousel-overlay h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.carousel-overlay p {
+    font-size: 1.25rem;
+    margin-bottom: 20px;
+}
+
+.carousel-overlay .btn-primary,
+.carousel-overlay .btn-success {
+    opacity: 0.9; /* Adjust the opacity of the buttons */
+}
+
+/* Adjust font sizes for extra-small screens (320px - 480px) */
+@media (max-width: 480px) {
+    .carousel-overlay h1 {
+        font-size: 1.25rem; /* Smaller heading font size */
+    }
+
+    .carousel-overlay p {
+        font-size: 0.875rem; /* Smaller paragraph font size */
+    }
+
+    .carousel-overlay .btn-primary,
+    .carousel-overlay .btn-success {
+        font-size: 0.75rem; /* Smaller button font size */
+        padding: 0.5rem 1rem; /* Adjust padding to match button size */
+    }
+}
+
+/* Adjust font sizes for small-medium screens (481px - 576px) */
+@media (min-width: 481px) and (max-width: 576px) {
+    .carousel-overlay h1 {
+        font-size: 1.5rem;
+    }
+
+    .carousel-overlay p {
+        font-size: 1rem;
+    }
+
+    .carousel-overlay .btn-primary,
+    .carousel-overlay .btn-success {
+        font-size: 0.875rem; /* Slightly larger button font size */
+        padding: 0.75rem 1.25rem; /* Adjust padding for better appearance */
+    }
+}
+
+/* Adjust font sizes for medium screens (577px - 720px) */
+@media (min-width: 577px) and (max-width: 720px) {
+    .carousel-overlay h1 {
+        font-size: 2rem;
+    }
+
+    .carousel-overlay p {
+        font-size: 1.15rem;
+    }
+
+    .carousel-overlay .btn-primary,
+    .carousel-overlay .btn-success {
+        font-size: 1rem; /* Larger button font size */
+        padding: 0.75rem 1.5rem; /* Adjust padding for better appearance */
+    }
+}
+
+/* Adjust object-fit on large screens to prevent cropping */
+@media (min-width: 992px) {
+    .carousel-item img {
+        object-fit: fill;
+        max-height: 600px; /* Increase max-height for larger screens if needed */
+    }
+}
+
+
+ /* Custom CSS for Courses Section */
+/* Full-width container styling */
+.full-width-container {
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    width: 100vw;
+    padding: 0; /* Remove padding */
+}
+
+/* Title container with gradient background */
+.title-container {
+    background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)); /* Dark gradient background */
+    color: #ffc107; /* Text color as warning */
+    padding: 20px;
+    border-radius: 5px;
+    justify-content: center;
+    max-width: 100%; /* Ensure no cropping */
+}
+
+/* Adjust image and text styling */
+.courses-image {
+    max-width: 200px;
+    height: auto;
+}
+
+.courses-title {
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.courses-description {
+    font-weight: lighter;
+    color: #ffc107;
+    max-width: 800px;
+}
+
+/* Responsive adjustments for small screens */
+@media (max-width: 576px) {
+    .title-container {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    .courses-image {
+        max-width: 100px;
+        margin-bottom: 1rem;
+    }
+
+    .courses-description {
+        font-size: 0.9rem;
+        text-align: center;
+    }
+}
+
+ .card-img-container {
+    aspect-ratio: 16 / 9; /* Adjust the ratio to match your image's aspect ratio */
+    overflow: hidden;
+    position: relative;
+}
+
+.card-img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the container without distortion */
+}
+
+/* Reduce font size and adjust padding/margins for smaller screens */
+@media (max-width: 576px) {
+    .course-card {
+        margin-bottom: 1rem;
+    }
+    .course-card .card-title {
+        font-size: 0.9rem; /* Decrease font size of titles */
+        margin-bottom: 0.5rem;
+    }
+    .course-card .card-text {
+        font-size: 0.8rem; /* Decrease font size of text */
+        margin-bottom: 0.5rem;
+    }
+    .course-card .btn {
+        font-size: 0.8rem; /* Decrease font size of buttons */
+        padding: 0.25rem 0.5rem; /* Adjust button padding */
+    }
+    .card-body {
+        padding: 0.75rem; /* Reduce padding inside the card */
+    }
+}
+
+
+
+ /* Facilities and Special Privileges Styles with Background Images and Gradient Overlay */
+.facilities {
+    background-image: 
+        linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), /* Gradient Overlay */
+        url('courses/view-modern-classroom-school_23-2150911424.avif');
+    background-size: cover;
+    background-position: center;
+    color: #fff; /* Adjust text color for better visibility */
+    padding: 2rem 1rem;
+    border-radius: 0.5rem;
+    margin-bottom: 2rem;
+}
+
+/* Increase height on large screens */
+@media (min-width: 992px) {
+    .facilities {
+        height: 40vh; /* Adjust the height as needed for large screens */
+    }
+}
+
+
+.special-privileges {
+    background-image: 
+        linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), /* Darker Gradient Overlay */
+        url('courses/view-school-classroom_23-2151031922.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff; /* Adjust text color for better visibility */
+    padding: 2rem 1rem;
+    border-radius: 0.5rem;
+}
+
+/* Increase height on large screens */
+@media (min-width: 992px) {
+    .special-privileges {
+        height: 30vh; /* Adjust the height as needed for large screens */
+    }
+}
+
+
+.facilities ul, .special-privileges ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.facilities li, .special-privileges li {
+    margin-bottom: 0.5rem;
+}
+
+/* Mobile-Friendly Styles */
+@media (max-width: 576px) {
+    .course-card {
+        margin-bottom: 1rem;
+    }
+
+    .facilities, .special-privileges {
+        padding: 1rem 0.5rem;
+    }
+}
+
+/* Director's Message */
+
+.director-message {
+
+    background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)); /* Dark gradient background */
+    color: #ffc107; /* Text color as warning */
+    padding: 20px;
+    border-radius: 5px;
+    justify-content: center;
+    max-width: 100%; /* Ensure no cropping */
+}
+
+.section-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #ffc107; /* Adjust the text color for better visibility against the background image */
+}
+
+.director-image {
+    width: 100%;
+    max-width: 250px;
+    height: auto; /* Auto height to maintain aspect ratio */
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Add some shadow for better image visibility */
+}
+
+.message-text {
+    font-weight: 100;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #ffffff; /* Adjust the text color for better visibility against the background image */
+}
+
+.message-author {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #ffffff; /* Adjust the text color for better visibility against the background image */
+}
+
+/* Media Query for smaller screens */
+@media (max-width: 767.98px) {
+    .director-message {
+        padding: 20px;
+    }
+
+    .section-title {
+        font-size: 1.5rem;
+    }
+
+    .message-text {
+        font-size: 1rem;
+    }
+
+    .message-author {
+        font-size: 1.1rem;
+    }
+}
+
+/* footer */
+/* General styles for footer links */
+.footer a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+/* Hover effect for all footer links */
+.footer a:hover {
+    color: #ffc107 !important; /* Yellow color on hover with higher specificity */
+}
+
+/* Specific styles for the social media icons */
+.social-media a {
+    font-size: 30px; /* Increase icon size */
+    margin-right: 15px; /* Add spacing between icons */
+    transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Adding left margin to social media container for large screens */
+@media (min-width: 992px) {
+    .social-media-container {
+        margin-left: 100px;
+    }
+}
+
+/* Responsive adjustments */
+@media (max-width: 767px) {
+    .footer .row > div {
+        margin-bottom: 30px;
+    }
+}
+#ias-course {
+    padding: 2rem;
+}
+
+#ias-course img {
+    max-width: 100%;
+    height: auto;
+}
+
+@media (max-width: 767.98px) {
+    #ias-course .row {
+        flex-direction: column;
+    }
+
+    #ias-course .col-md-6 {
+        margin-bottom: 1rem;
+    }
+}
+
